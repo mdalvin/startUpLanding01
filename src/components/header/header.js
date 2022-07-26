@@ -4,6 +4,7 @@ import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
+import Ureshii from "assets/logo_ureshii.png";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 
@@ -11,7 +12,7 @@ export default function Header({ className }) {
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+        <Logo src={Ureshii} sx={styles.logo} />
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link
@@ -83,6 +84,10 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+  },
+  logo: {
+    width: 45,
+    height: 45,
   },
   nav: {
     mx: "auto",

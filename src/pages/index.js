@@ -13,21 +13,23 @@ import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
+import News from 'sections/news';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
-          <Banner />
-          <KeyFeature />
+          <SEO title="Ureshii" />
+          <News />
+          {/* <Banner /> */}
+          {/* <KeyFeature />
           <ServiceSection />
           <Feature />
           <CoreFeature />
           <WorkFlow />
           <Package />
           <TeamSection />
-          <TestimonialCard />
+          <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );
