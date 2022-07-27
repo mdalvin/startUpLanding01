@@ -3,7 +3,6 @@ import { jsx, Box, Container, Image, Text } from "theme-ui";
 import { Link } from "components/link";
 import data from "./footer.data";
 import FooterLogo from "assets/logo.svg";
-import Ureshii from "assets/logo_ureshii.png";
 
 export default function Footer() {
   return (
@@ -11,7 +10,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={Ureshii} alt="Logo" sx={styles.footer.logo} />
+            <Image src={FooterLogo} alt="Logo" />
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
